@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.section {
+    position: absolute;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./photos/audi.jpg");
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.content {
+    color: firebrick;
+    font-family: Georgia;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    font-size: 30px;
+    margin: 20px auto;
+    color: orangered;
+}
+
+.video {
+    position: absolute;
+}
+
+video {
+    height: 700px;
+    width: 100vw;
+    opacity: 0.5;
+}
+
+.navbar {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 35px 0;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    font-family: Georgia;
+    font-size: 30px;
+}
+
+.navbar ul li a:hover {
+    color: orangered;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #009688;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    background: transparent;
+    border: 2px solid orangered;
+    border-radius: 1.5rem;
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 15px 0;
+    margin: 30px 10px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+span {
+    height: 100%;
+    background: orangered;
+    transition: 0.5s;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
