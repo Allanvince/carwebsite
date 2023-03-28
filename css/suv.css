@@ -1,0 +1,256 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../photos/range-rover.jpg");
+    left: 0;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-text {
+    font-family: Georgia;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: orangered;
+}
+
+.hero-text p {
+    font-size: 1.6rem;
+    color: wheat;
+    padding: 10px;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    top: 41%;
+    height: 40%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content div {
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.content h2 {
+    text-align: center;
+    color: orangered;
+    font-size: 1.8rem;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.show {
+    border: 1px solid orangered;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 41%;
+    width: 48%;
+    height: 40%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.show video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section {
+    background-color: orangered;
+    position: absolute;
+    top: 83%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.section h2 {
+    color: wheat;
+    text-align: center;
+    font-size: 2.0rem;
+    text-transform: capitalize;
+}
+
+.cards {
+    display: flex;
+    width: 20%;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 88%;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 0.9;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card .text {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: start;
+}
+
+.gallery,
+.gallery-2,
+.gallery-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+    grid: column gap 15px;
+    grid: row gap 2px;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.gallery {
+    top: 88%;
+}
+
+.gallery-2 {
+    top: 130%;
+}
+
+.gallery-3 {
+    top: 169%;
+}
+
+.gallery__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery__item--4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.info,
+.info-2,
+.info-3 {
+    width: 40%;
+    position: absolute;
+    transform: translateY(-15%);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    margin-left: 350px;
+    overflow: hidden;
+}
+
+.info {
+    top: 93%;
+}
+
+.info-2 {
+    top: 130%;
+}
+
+.info-3 {
+    top: 169%;
+}
+
+.info,
+.info-2,
+.info-3 h2,
+p {
+    text-align: center;
+}
+
+.info,
+.info-2,
+.info-3,
+h2 {
+    font-size: 1.8rem;
+    color: orangered;
+}
+
+.info,
+.info-2,
+.info-3,
+p {
+    font-size: 1.4rem;
+    color: black;
+}

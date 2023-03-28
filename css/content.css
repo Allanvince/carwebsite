@@ -55,7 +55,10 @@
     width: 100%;
 }
 
-.sub-menu1 {
+.sub-menu1,
+.sub-menu2,
+.sub-menu3,
+.sub-menu4 {
     display: none;
 }
 
@@ -66,10 +69,6 @@
     margin-left: 15px;
 }
 
-.sub-menu2 {
-    display: none;
-}
-
 .sec1 .navbar ul li:hover .sub-menu2 {
     display: block;
     position: absolute;
@@ -77,19 +76,11 @@
     margin-left: 15px;
 }
 
-.sub-menu3 {
-    display: none;
-}
-
 .sec1 .navbar ul li:hover .sub-menu3 {
     display: block;
     position: absolute;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("benz.jpg");
     margin-left: 15px;
-}
-
-.sub-menu4 {
-    display: none;
 }
 
 .sec1 .navbar ul li:hover .sub-menu4 {

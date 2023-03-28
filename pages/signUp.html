@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+</head>
+<body>
+    
+    <form id="form" action="/pages/login.html" method="post">
+        <div class="input_wrap">
+            <div id="error"></div>
+            <label for="email">Email</label>
+            <div class="input_text">
+                <input type="email" id="email" placeholder="Enter your email" onsubmit="return validateEmail()" onfocus="return errEmail()" onblur="return meso()">
+                <div style="display: none;" id="errorEmail">Syntax-example: johndoe@gmail.com</div>
+            </div>
+            
+            <label for="password">Password</label>
+            <div class="input_text">
+                <input type="password" id="password" placeholder="Set your password" onsubmit="return validatePassword()" onfocus="return errPass() " onblur="return msg()">
+                <div style="display: none;" id="errorPass">Should contain minimum of 8 characters ,special character<br>,upper & lowercase letters</div>
+            </div>
+
+            <label for="password">Confirm Paswword</label>
+            <div class="input_text">
+                <input type="password" id="confirmPass" placeholder="Confirm your password">
+                <div style="display: none;" id="confirmMsg">Passwords do not match!!!</div>
+            </div>
+
+            <label for="country">Country</label>
+            <div class="input_text">
+                <select name="country" id="country" placeholder = "select your country">
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="burundi">Burundi</option>
+                </select>
+            </div>
+            <button type="submit" id="signup">Sign Up</button>
+        </div>
+              
+    </form>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        import { getAuth } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCYQF645Tt7eo4eEXiuQwn90TNaSOvKHn0",
+          authDomain: "web-chat-54972.firebaseapp.com",
+          projectId: "web-chat-54972",
+          storageBucket: "web-chat-54972.appspot.com",
+          messagingSenderId: "286839968969",
+          appId: "1:286839968969:web:21fecded896cd798482918"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("signup").addEventListener("click", function(){
+            const email = document.getElementById("email").value
+            const password = document.getElementById("password").value
+
+            alert("this is for signup")
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+        })
+
+      </script>
+</body>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js></script>
+<script defer src="../js/signUp.js"></script>
+
+</html>

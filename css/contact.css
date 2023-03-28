@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../photos/dirt.jpg");
+    background-size: cover;
+}
+
+.section {
+    width: 40rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 3rem;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../photos/dirt.jpg");
+}
+
+.section div img {
+    height: 4rem;
+    width: 4rem;
+    padding: 10px;
+}
+
+.section div p {
+    color: antiquewhite
+}
+
+.section2 {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 6rem;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../photos/dirt.jpg"); */
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.section2 h1 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.section2 img {
+    height: 300px;
+    width: 300px;
+}
+
+.section2 p {
+    color: white;
+}
