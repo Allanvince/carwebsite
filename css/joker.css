@@ -23,7 +23,7 @@ body {
 .section h1 {
     font-size: 40px;
     font-family: Georgia;
-    color: firebrick;
+    color: orangered;
     text-transform: uppercase;
     position: absolute;
     top: 0;
@@ -81,7 +81,7 @@ button {
 }
 
 .sec2 h2 {
-    color: green;
+    color: orangered;
     font-size: 20px;
     font-family: Times New Roman;
     text-transform: uppercase;

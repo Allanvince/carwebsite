@@ -5,9 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../photos/porsche.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("/photos/por.jpg");
+    object-fit: cover;
 }
-#form{
+.formContainer{
     width: 50%;
     margin: 0 auto;
     align-items: center;
@@ -23,6 +24,24 @@ body{
     padding: 10px;
     border-radius: 25px; 
     overflow: hidden;
+}
+.ref{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translateY(60%);
+    width: 20%;
+    background:linear-gradient(to right, black, orangered);
+}
+.ref a{
+    text-decoration: none;
+    color:wheat;
+    font-size: 1.2rem;
+}
+.ref a:hover{
+    color:greenyellow;
 }
 button {
     border: 1px solid orangered;
@@ -49,11 +68,12 @@ button:hover {
     height: 40px;
     overflow: none;
     text-align: center;
+    color: orangered;
     font-size: 0.9rem;
 }
 label{
     font-size: 1rem;
-    color: wheat;
+    color: white;
 }
 .input_text{
     padding:10px;
@@ -65,5 +85,5 @@ label{
     text-transform: uppercase;
 }
 #errorPass, #errorEmail{
-    color: green;
+    color: greenyellow;
 }

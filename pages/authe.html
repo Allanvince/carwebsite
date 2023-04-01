@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/authe.css">
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="/js/form.js"></script>
+    <title>Login System</title>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="input_wrap">
+            <div id="error"></div>
+            <label for="email">Email</label>
+            <div class="input_text">
+                <input type="email" id="email" placeholder="Enter your email" onfocus = "errorMail()", onblur = "errorMail2()" required>
+                <div style="display: none;" id="errorEmail">Syntax-example: johndoe@gmail.com</div>
+            </div>
+            
+            <label for="password">Password</label>
+            <div class="input_text">
+                <input type="password" id="password" placeholder="Set your password" onfocus="errorMessage()" , onblur="errorMsg()" required>
+                <div style="display: none;" id="errorPass">Should contain minimum of 8 characters ,special character<br>,upper & lowercase letters</div>
+            </div>
+
+            <!-- <label for="password">Confirm Password</label>
+            <div class="input_text">
+                <input type="password" id="confirmPass" placeholder="Confirm your password">
+                <div style="display: none;" id="confirmMsg">Passwords do not match!!!</div>
+            </div> -->
+
+            <label for="country">Country</label>
+            <div class="input_text">
+                <select name="country" id="country" placeholder = "select your country">
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="burundi">Burundi</option>
+                </select>
+            </div>
+
+    <button onclick="signUp()" id="signUp" type="submit">SignUp</button>
+    <button onclick="signOut()" id="signOut">SignOut</button>
+    </div>
+</div>
+<div class="ref">
+    <a href="login.html">Already signed up? Login</a>
+</div>      
+</body>
+</html>
