@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #161616;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 0.9rem;
+    max-width: 35em;
+    line-height: 27px;
+}
+h1, h2{
+    font-weight: 300;
+}
+h1{
+    margin: 0.3em 0;
+    font-size: 1.5em;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 20%;
+    align-items: flex-start;
+}
+.specs h2, .about h2{
+    font-size: 1em;
+    padding-left: 0.8m;
+    border-left: 0.1em #5bc7ca solid;
+    color: orangered;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    padding: 2.5em;
+}
+nav, .infos, .info, .specs-header, .specs li, .stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.specs, .icon, .panel:first-child, .panel:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 100vh;
+    min-height: 30em;
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/photos/old\ rolls\ \(2\).jpg)
+    no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    padding: 1.5em 2.5em;
+    position: relative;
+}
+.menu-btn{
+    display: none;
+}
+.brand{
+    font-size: 1.3em;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0.8em;
+    text-align: center;
+}
+nav a{
+    color: wheat;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav a:hover{
+    transform: scale(1.05);
+    color: greenyellow;
+}
+.header-body{
+    padding: 2.5em;
+    height: 20%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.header-body h1{
+    color: orangered;
+}
+.header-body p{
+    max-width: 25em;
+    color: white;
+    font-size: 1.2em;
+}
+#hed{
+    font-size: 1rem;
+}
+.heading h2{
+    margin-bottom: 1em;
+}
+.heading p{
+    display: inline-block;
+    color: white;
+}
+.infos{
+    gap: 0.2em;
+}
+.infos, .heading{
+    padding: 0.3em 0.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info img{
+    max-width: 3em;
+    margin-right: 0.2em;
+}
+.info h3{
+    font-size: 1rem;
+    left: 0;
+    margin-bottom: 0, 2em;
+    color: orangered;
+}
+.info p{
+    max-width: 10em;
+    color: white;
+}
+.specs{
+    min-height: 10em;
+    width: 50%;
+    right: 0;
+    top: 10%;
+    position:absolute;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.specs-header, .specs ul{
+    position: relative;
+    z-index: 1;
+}
+.specs ul{
+    width: 40em;
+    margin-top: 3em;
+}
+.specs li{
+    padding: 0.6em 0;
+    border-bottom: #555 1px solid;
+}
+.specs span{
+    color: white;
+}
+
+.panels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 5em;
+    width: 50%;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+.panel > div{
+    padding: 0.2em;
+    
+}
+.panels-sm{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.panel:first-child,
+.panel:last-child{
+    padding: 0.5em;
+    height: 150px;
+}
+.panel:first-child{
+    background: orangered;
+    opacity: 0.4;
+}
+.panel:last-child{
+    background: wheat;
+    color: orangered;
+    opacity: 0.4;
+}
+.panel:nth-child(2){
+    background: url(/photos/oldr.jpg)
+    no-repeat center;
+}
+.panel:nth-child(3){
+    background: url(/photos/old\ rolls\ \(2\).jpg)
+    no-repeat center;
+}
+.panel:nth-child(2),
+.panel:nth-child(3){
+    background-size: cover;
+    position: relative;
+}
+.specs::before,
+.panel:nth-child(2)::before,
+.panel:nth-child(3)::before{
+    content: '';
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.panel h2{
+    margin: 0.9em 0;
+    font-size:1rem;
+}
+.panel-lg{
+    background: url(../photos/old\ rolls\ \(1\).jpg)
+    no-repeat center;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    opacity: 0.4;
+}
+.icon{
+    font-size: 2em;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+.panel:first-child.icon{
+    border: 3px #fff solid;
+}
+.panel:nth-child(4).icon{
+    border: 3px #fff solid;
+}
+.car-stats{
+    padding: 2em 0.5em;
+    width: 30%;
+    height: 100px;
+    left: 0;
+    top: 75%;
+    position: absolute;
+}
+.stats{
+    text-align: center;
+    /* max-width: 200px; */
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 100px;
+}
+.stats h1{
+    color: white;  
+    font-size: 1rem;  
+}
+.stats > div{
+    margin-bottom: 1em;
+    position: relative;
+    max-width: 3em;
+}
+.stats > div:nth-child(){
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.stats h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: orangered;
+}
+.counter{
+    margin: 0.1em 0;
+}
+.counter h1{
+    font-size: 1rem;
+    color: white;
+}
+.car{
+    padding: 2em 0.5em 2em 0.5em;
+    margin-top: 4em;
+}
+.circle{
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: #161616;
+    animation: glow 4s ease-in-out infinite;
+    aspect-ratio: 3 / 1;
+}
+.car img{
+    width: 70%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+/* .circle div{
+    border: inherit;
+    border-radius: inherit;
+    background: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: inherit;
+}
+.circle .inner-md-circle{
+    width: 75%;
+    height: 75%;
+    top: 10%;
+    animation-delay: 3s;
+} */
+/* .circle .inner-sm-circle{
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    animation-delay: 6s;
+} */
+/* 
+@keyframes glow{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 0 1em #5bc7ca;
+    }
+    100%{
+        box-shadow: none;
+    }
+} */
+@media screen and (max-width: 900px){
+    .menu-btn{
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        color: orangered;
+    }
+    .brand, .menu-btn{
+        position: relative;
+        z-index: 1;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: black;
+        padding: 0;
+        width: 100%;
+        height: 0;
+        overflow-y: hidden;
+        transition: 0.6s ease-in-out;
+    }
+    .menu-open{
+        height: 17em;
+        padding: 5em 0 1em 0;
+    }
+    .menu-li{
+        display: block;
+        margin: 1em 0;
+    }
+    .specs ul{
+        width: 80vw;
+    }
+    .infos, .info, .stats{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .infos{
+        gap: 3em;
+    }
+    .info img{
+        margin: 0 0 1em 0;
+    }
+    .panels, .panels-sm{
+        grid-template-columns: 1fr;
+    }
+    .panel, .panel-lg{
+        min-height: 15em;
+    }
+    .panel:nth-child(2){
+        order: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 14px;
+    }
+}

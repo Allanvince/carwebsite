@@ -9,7 +9,9 @@ body {
 }
 
 .section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../photos/audi.jpg");
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../photos/mach-e\ logo.jpg)
+    no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 200px;
     top: 0;
@@ -56,7 +58,7 @@ button {
     position: relative;
     display: flex;
     cursor: pointer;
-    border: 1px solid #009688;
+    border: 1px orangered solid ;
     border-radius: 25px;
     background: transparent;
     padding: 15px 0;
@@ -68,6 +70,10 @@ button {
     font-family: Georgia;
     overflow: hidden;
     margin-left: 200px;
+}
+button:hover{
+    background: orangered;
+    border: none;
 }
 
 .sec2 {
@@ -141,4 +147,9 @@ p17 {
 
 .sec5 video {
     height: 300px;
+}
+.sec2{
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../photos/merce.jpg)
+    no-repeat center;
+    background-size: cover;
 }

@@ -17,7 +17,7 @@ textarea {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/photos/range-rover.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../photos/range-rover.jpg");
   background-size: cover;
   overflow: hidden;
   display: flex;
